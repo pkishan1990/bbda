@@ -1,0 +1,90 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:lang="http://www.springframework.org/schema/lang"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:task="http://www.springframework.org/schema/task"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:websocket="http://www.springframework.org/schema/websocket" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    	http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+        http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+        http://www.springframework.org/schema/task  http://www.springframework.org/schema/task/spring-task-3.0.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+        http://www.springframework.org/schema/websocket
+        http://www.springframework.org/schema/websocket/spring-websocket.xsd">
+    <context:annotation-config />
+    <task:annotation-driven/>
+    <context:component-scan base-package="controller" /> 
+ 	<mvc:annotation-driven/>
+ 	<bean id="jspViewResolver"
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass"
+            value="org.springframework.web.servlet.view.JstlView" />
+        <property name="prefix" value="/WEB-INF/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+    <bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<!-- <value>/WEB-INF/jdbc/jdbc.properties</value> -->
+			<value>/WEB-INF/classes/application.properties</value>
+		</property>
+	</bean>
+	
+	
+	
+
+<!-- Services -->
+<!-- <bean id="userMasterService" class="service.UsermanterServiceImpl" /> -->
+<bean id="loginService" class="service.LoginServiceImpl"/>
+<bean id="batchMasterService" class="service.BatchMasterServiceImpl" />
+<bean id="studentMasterService" class="service.StudentMasterServiceImpl"/>
+<bean id="paramastService" class="service.ParamastServiceImpl"/>
+<bean id="feesMasterService" class="service.FeesMasterServiceImpl" />
+
+ <!-- Services :: End -->
+ 
+ <!-- Dao -->
+<bean id="userMaster" class="dao.UserMasterDaoImpl"><property name="sessionFactory"><ref bean="sessionFactory"/></property></bean>
+<bean id="studentMasterDao" class="dao.StudentMasterDaoImpl"><property name="sessionFactory"><ref bean="sessionFactory"/></property></bean>
+<bean id="paramastDao" class="dao.ParamastDaoImpl"><property name="sessionFactory"><ref bean="sessionFactory"/></property></bean> 
+<bean id="feesMasterDao" class="dao.FeesMasterDaoImpl"><property name="sessionFactory"><ref bean="sessionFactory"/></property></bean>
+<bean id="batchMasterDao" class="dao.BatchMasterDaoImpl"><property name="sessionFactory"><ref bean="sessionFactory"/></property></bean>
+<!-- Dao :: End -->
+	
+<!-- Hibernate Configuration -->
+ 
+ 
+ 
+ <bean id="sessionFactory"
+        class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <!-- <property name="dataSource" ref="dataSource" /> -->
+         <property name="configLocation">
+            <value>classpath:hibernate.cfg.xml</value>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">${BBDAS.dialect}</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.multiTenancy">SCHEMA</prop>
+            	<prop key="hibernate.multi_tenant_connection_provider">filter.MultiTenantConnectionProviderImpl</prop>
+                <!-- <prop key="hibernate.hbm2ddl.auto">update</prop> -->
+            </props>
+        </property>
+    </bean> 
+ 
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+    
+    
+</beans>

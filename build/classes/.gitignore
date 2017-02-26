@@ -1,0 +1,10 @@
+/application.properties
+/controller/
+/dao/
+/entity/
+/filter/
+/hibernate.cfg.xml
+/hibernate.properties
+/hibernate.reveng.xml
+/log4j.properties
+/service/
