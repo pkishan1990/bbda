@@ -73,17 +73,17 @@ public class DashboardController {
 
 
 
-@RequestMapping(value = "/quickSearch.htm", method = RequestMethod.POST)
-public @ResponseBody
-String ValidateLeaveApplicationDates(HttpServletRequest request,
-		HttpServletResponse response) {
-	String SearchString  = request.getParameter("searchString");
-	System.out.println(SearchString +  "  searching...");
-	List<Object[]> searchResultObject = this.studentMasterService.searchThisData(SearchString);
-	String jsonstr = new Gson().toJson(searchResultObject);
-	System.out.println(jsonstr +  "  searchResultObject");
-	return jsonstr;
-	
-}
+//@RequestMapping(value = "/quickSearch.htm", method = RequestMethod.POST)
+//public @ResponseBody
+////String ValidateLeaveApplicationDates(HttpServletRequest request,
+////		HttpServletResponse response) {
+////	String SearchString  = request.getParameter("searchString");
+////	System.out.println(SearchString +  "  searching...");
+////	List<Object[]> searchResultObject = this.studentMasterService.searchThisData(SearchString);
+////	String jsonstr = new Gson().toJson(searchResultObject);
+////	System.out.println(jsonstr +  "  searchResultObject");
+//	return null;
+//	
+//}
 
 }

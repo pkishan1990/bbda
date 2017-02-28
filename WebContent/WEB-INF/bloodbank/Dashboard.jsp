@@ -66,10 +66,10 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
  
 
 
-<%@ include file = "/WEB-INF/teacher/leftmenu.jsp" %>
+<%@ include file = "/WEB-INF/bloodbank/leftmenu.jsp" %>
  
 <div class="page-container ">
-<%@ include file = "/WEB-INF/teacher/Header.jsp" %>
+<%@ include file = "/WEB-INF/bloodbank/Header.jsp" %>
  
  
 <div class="page-content-wrapper ">
@@ -88,15 +88,15 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                   </div>
                   <div class="panel-body">
                     <h5>
-                                    Search Previous donors
+                             Search donor from history
                                 </h5>
-                    <form role="form">
+                    <form role="form" id="perForm" action="searchdonorfromhistory.htm" method="post">
                       <div class="form-group">
                         <label>Blood donors :</label>
                         <span class="help">e.g. "Bill Gates"</span>
-                        <input type="email" class="form-control" required>
+                        <input type="text" id="donorName" name="donorName" class="form-control" required>
                       </div>
-                      <button class="btn btn-primary btn-cons">Search</button>
+                      <button class="btn btn-primary btn-cons " type="submit">Search</button>
                          
                     </form>
                   </div>

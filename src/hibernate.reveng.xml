@@ -2,11 +2,7 @@
 <!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
 
 <hibernate-reverse-engineering>
-  <table-filter match-schema="public" match-name="batchmaster"/>
-  <table-filter match-schema="public" match-name="eventmaster"/> 
-  <table-filter match-schema="public" match-name="feesmaster"/>
-  <table-filter match-schema="public" match-name="paramaster"/>
-  <table-filter match-schema="public" match-name="staffmaster"/>
-  <table-filter match-schema="public" match-name="studentmaster"/>
-  <table-filter match-schema="public" match-name="usermaster"/> 
+  <table-filter match-schema="public" match-name="bloodbankmaster"/> 
+  <table-filter match-schema="public" match-name="donor"/>
+  <table-filter match-schema="public" match-name="usermaster"/>
 </hibernate-reverse-engineering>

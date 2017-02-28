@@ -1,6 +1,5 @@
 package entity;
-
-// Generated Mar 11, 2016 5:28:01 PM by Hibernate Tools 3.4.0.CR1
+// Generated 27-Feb-2017 10:30:00 PM by Hibernate Tools 5.2.1.Final
 
 import java.util.Date;
 import javax.persistence.Column;
@@ -35,8 +34,7 @@ public class Usermaster implements java.io.Serializable {
 		this.recordid = recordid;
 	}
 
-	public Usermaster(String username, String userlevel, String role,
-			String password, Date logindate, String logintime,
+	public Usermaster(String username, String userlevel, String role, String password, Date logindate, String logintime,
 			String firstname, String lastname, long recordid) {
 		this.username = username;
 		this.userlevel = userlevel;
@@ -50,6 +48,7 @@ public class Usermaster implements java.io.Serializable {
 	}
 
 	@Id
+
 	@Column(name = "username", unique = true, nullable = false, length = 10)
 	public String getUsername() {
 		return this.username;

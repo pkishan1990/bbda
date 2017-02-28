@@ -48,6 +48,7 @@
 <!-- Services -->
 <!-- <bean id="userMasterService" class="service.UsermanterServiceImpl" /> -->
 <bean id="loginService" class="service.LoginServiceImpl"/>
+<bean id="bloodbankService" class="service.BloodBankServiceImpl"/>
 <bean id="batchMasterService" class="service.BatchMasterServiceImpl" />
 <bean id="studentMasterService" class="service.StudentMasterServiceImpl"/>
 <bean id="paramastService" class="service.ParamastServiceImpl"/>
@@ -57,6 +58,7 @@
  
  <!-- Dao -->
 <bean id="userMaster" class="dao.UserMasterDaoImpl"><property name="sessionFactory"><ref bean="sessionFactory"/></property></bean>
+<bean id="bloodBankDao" class="dao.BloodBankDaoImpl"><property name="sessionFactory"><ref bean="sessionFactory"/></property></bean>
 <bean id="studentMasterDao" class="dao.StudentMasterDaoImpl"><property name="sessionFactory"><ref bean="sessionFactory"/></property></bean>
 <bean id="paramastDao" class="dao.ParamastDaoImpl"><property name="sessionFactory"><ref bean="sessionFactory"/></property></bean> 
 <bean id="feesMasterDao" class="dao.FeesMasterDaoImpl"><property name="sessionFactory"><ref bean="sessionFactory"/></property></bean>
