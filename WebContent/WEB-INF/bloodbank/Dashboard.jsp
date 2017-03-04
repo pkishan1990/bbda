@@ -80,7 +80,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
             
             <div class="row">
             <div class="col-md-4">
-            <div class="panel  bg-info-lighter" >
+            <div class="panel  bg-warning" >
                   <div class="panel-heading">
                     <div class="panel-title">
                       Option one
@@ -88,12 +88,12 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                   </div>
                   <div class="panel-body">
                     <h5>
-                             Search donor from history
+                             Search donors 
                                 </h5>
                     <form role="form" id="perForm" action="searchdonorfromhistory.htm" method="post">
                       <div class="form-group">
                         <label>Blood donors :</label>
-                        <span class="help">e.g. "Bill Gates"</span>
+                        <span class="help">e.g. "Bill Gates" or blood group e.g "A+"</span>
                         <input type="text" id="donorName" name="donorName" class="form-control" required>
                       </div>
                       <button class="btn btn-primary btn-cons " type="submit">Search</button>
@@ -104,14 +104,14 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                 <!-- END PANEL -->
             </div>
             <div class="col-md-4">
-            <div class="panel  bg-info-lighter" style="">
+            <div class="panel  bg-primary" style="">
                   <div class="panel-heading">
                     <div class="panel-title">
                       Option two
                     </div>
                   </div>
                   <div class="panel-body">
-                    <h5>
+                    <h5 class="text-white">
                                     Manage Inventory
                                 </h5>
                     <form role="form">
@@ -130,6 +130,373 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
             </div>
             
 </div>
+<div class="row">
+<div class=" col-xlg-3">
+                <div class="ar-2-3">
+                  <!-- START WIDGET -->
+                  <div class="widget-11 panel no-border  no-margin widget-loader-bar">
+                    <div class="panel-heading ">
+                      <div class="panel-title">Today's sales
+                      </div>
+                      <div class="panel-controls">
+                        <ul>
+                          <li><a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i class="portlet-icon portlet-icon-refresh"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="p-l-25 p-r-25 p-b-20">
+                      <div class="pull-left">
+                        <h2 class="text-success no-margin">webarch</h2>
+                      </div>
+                      <h3 class="pull-right semi-bold"><sup><small class="semi-bold">$</small></sup> 102,967</h3>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="widget-11-table auto-overflow">
+                      <table class="table table-condensed table-hover">
+                        <tbody>
+                          <tr>
+                            <td class="font-montserrat all-caps fs-12">Purchase CODE #2345</td>
+                            <td class="text-right">
+                              <span class="hint-text small">dewdrops</span>
+                            </td>
+                            <td class="text-right b-r b-dashed b-grey">
+                              <span class="hint-text small">Qty 1</span>
+                            </td>
+                            <td>
+                              <span class="font-montserrat fs-18">$27</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="font-montserrat all-caps fs-12">Purchase CODE #2345</td>
+                            <td class="text-right">
+                              <span class="hint-text small">johnsmith</span>
+                            </td>
+                            <td class="text-right b-r b-dashed b-grey">
+                              <span class="hint-text small">Qty 1</span>
+                            </td>
+                            <td>
+                              <span class="font-montserrat fs-18 text-primary">$1000</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="font-montserrat all-caps fs-12">Purchase CODE #2345</td>
+                            <td class="text-right">
+                              <span class="hint-text small">janedrooler</span>
+                            </td>
+                            <td class="text-right b-r b-dashed b-grey">
+                              <span class="hint-text small">Qty 1</span>
+                            </td>
+                            <td>
+                              <span class="font-montserrat fs-18">$27</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="font-montserrat all-caps fs-12">Purchase CODE #2345</td>
+                            <td class="text-right">
+                              <span class="hint-text small">johnsmith</span>
+                            </td>
+                            <td class="text-right b-r b-dashed b-grey">
+                              <span class="hint-text small">Qty 1</span>
+                            </td>
+                            <td>
+                              <span class="font-montserrat fs-18 text-primary">$1000</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="font-montserrat all-caps fs-12">Purchase CODE #2345</td>
+                            <td class="text-right">
+                              <span class="hint-text small">dewdrops</span>
+                            </td>
+                            <td class="text-right b-r b-dashed b-grey">
+                              <span class="hint-text small">Qty 1</span>
+                            </td>
+                            <td>
+                              <span class="font-montserrat fs-18">$27</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="font-montserrat all-caps fs-12">Purchase CODE #2345</td>
+                            <td class="text-right">
+                              <span class="hint-text small">johnsmith</span>
+                            </td>
+                            <td class="text-right b-r b-dashed b-grey">
+                              <span class="hint-text small">Qty 1</span>
+                            </td>
+                            <td>
+                              <span class="font-montserrat fs-18 text-primary">$1000</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="font-montserrat all-caps fs-12">Purchase CODE #2345</td>
+                            <td class="text-right">
+                              <span class="hint-text small">dewdrops</span>
+                            </td>
+                            <td class="text-right b-r b-dashed b-grey">
+                              <span class="hint-text small">Qty 1</span>
+                            </td>
+                            <td>
+                              <span class="font-montserrat fs-18">$27</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="font-montserrat all-caps fs-12">Purchase CODE #2345</td>
+                            <td class="text-right">
+                              <span class="hint-text small">johnsmith</span>
+                            </td>
+                            <td class="text-right b-r b-dashed b-grey">
+                              <span class="hint-text small">Qty 1</span>
+                            </td>
+                            <td>
+                              <span class="font-montserrat fs-18 text-primary">$1000</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="font-montserrat all-caps fs-12">Purchase CODE #2345</td>
+                            <td class="text-right">
+                              <span class="hint-text small">dewdrops</span>
+                            </td>
+                            <td class="text-right b-r b-dashed b-grey">
+                              <span class="hint-text small">Qty 1</span>
+                            </td>
+                            <td>
+                              <span class="font-montserrat fs-18">$27</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="font-montserrat all-caps fs-12">Purchase CODE #2345</td>
+                            <td class="text-right">
+                              <span class="hint-text small">johnsmith</span>
+                            </td>
+                            <td class="text-right b-r b-dashed b-grey">
+                              <span class="hint-text small">Qty 1</span>
+                            </td>
+                            <td>
+                              <span class="font-montserrat fs-18 text-primary">$1000</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="padding-25">
+                      <p class="small no-margin">
+                        <a href="#"><i class="fa fs-16 fa-arrow-circle-o-down text-success m-r-10"></i></a>
+                        <span class="hint-text ">Show more details of APPLE . INC</span>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- END WIDGET -->
+                </div>
+              </div>
+
+</div>
+
+
+		<div class="row" style="display: none;">          
+                  <div class="col-md-8 col-lg-5 col-xlg-5">
+                <!-- START WIDGET -->
+                <div class="widget-17 panel  no-border no-margin widget-loader-circle">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <i class="pg-map"></i> California, USA
+                      <span class="caret"></span>
+                    </div>
+                    <div class="panel-controls">
+                      <ul>
+                        <li class="">
+                          <div class="dropdown">
+                            <a data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                              <i class="portlet-icon portlet-icon-settings"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right" role="menu">
+                              <li><a href="#">AAPL</a>
+                              </li>
+                              <li><a href="#">YHOO</a>
+                              </li>
+                              <li><a href="#">GOOG</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i class="portlet-icon portlet-icon-refresh"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+                    <div class="p-l-5">
+                      <div class="row">
+                        <div class="col-md-12 col-xlg-6">
+                          <div class="row m-t-20">
+                            <div class="col-md-5">
+                              <h4 class="no-margin">Monday</h4>
+                              <p class="small hint-text">9th August 2014</p>
+                            </div>
+                            <div class="col-md-7">
+                              <div class="pull-left">
+                                <p class="small hint-text no-margin">Currently</p>
+                                <h4 class="text-danger bold no-margin">32°
+                            <span class="small">/ 30C</span>
+                        </h4>
+                              </div>
+                              <div class="pull-right">
+                                <canvas height="64" width="64" class="clear-day"></canvas>
+                              </div>
+                            </div>
+                          </div>
+                          <h5>Feels like
+                <span class="semi-bold">rainy</span>
+            </h5>
+                          <p>Weather information</p>
+                          <div class="widget-17-weather">
+                            <div class="row">
+                              <div class="col-sm-6 p-r-10">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <p class="pull-left">Wind</p>
+                                    <p class="pull-right bold">11km/h</p>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <p class="pull-left">Sunrise</p>
+                                    <p class="pull-right bold">05:20</p>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <p class="pull-left">Humidity</p>
+                                    <p class="pull-right bold">20%</p>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <p class="pull-left">Precipitation</p>
+                                    <p class="pull-right bold">60%</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 p-l-10">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <p class="pull-left">Sunset</p>
+                                    <p class="pull-right bold">21:05</p>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <p class="pull-left">Visibility</p>
+                                    <p class="pull-right bold">21km</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row m-t-10 timeslot">
+                            <div class="col-xs-2 p-t-10 text-center">
+                              <p class="small">13:30</p>
+                              <canvas height="25" width="25" class="partly-cloudy-day"></canvas>
+                              <p class="text-danger bold">30°C</p>
+                            </div>
+                            <div class="col-xs-2 p-t-10 text-center">
+                              <p class="small">14:00</p>
+                              <canvas height="25" width="25" class="cloudy"></canvas>
+                              <p class="text-danger bold">30°C</p>
+                            </div>
+                            <div class="col-xs-2 p-t-10 text-center">
+                              <p class="small">14:30</p>
+                              <canvas height="25" width="25" class="rain"></canvas>
+                              <p class="text-danger bold">30°C</p>
+                            </div>
+                            <div class="col-xs-2 p-t-10 text-center">
+                              <p class="small">15:00</p>
+                              <canvas height="25" width="25" class="sleet"></canvas>
+                              <p class="text-danger bold">30°C</p>
+                            </div>
+                            <div class="col-xs-2 p-t-10 text-center">
+                              <p class="small">15:30</p>
+                              <canvas height="25" width="25" class="snow"></canvas>
+                              <p class="text-danger bold">30°C</p>
+                            </div>
+                            <div class="col-xs-2 p-t-10 text-center">
+                              <p class="small">16:00</p>
+                              <canvas height="25" width="25" class="wind"></canvas>
+                              <p class="text-danger bold">30°C</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xlg-6 visible-xlg">
+                          <div class="row">
+                            <div class="forecast-day col-md-6 text-center m-t-10 ">
+                              <div class="bg-master-lighter p-b-10 p-t-10">
+                                <h4 class="p-t-10 no-margin">Tuesday</h4>
+                                <p class="small hint-text m-b-20">11th Augest 2014</p>
+                                <canvas class="rain" width="64" height="64"></canvas>
+                                <h5 class="text-danger">32°</h5>
+                                <p>Feels like
+                                  <span class="bold">sunny</span>
+                                </p>
+                                <p class="small">Wind
+                                  <span class="bold p-l-20">11km/h</span>
+                                </p>
+                                <div class="m-t-20 block">
+                                  <div class="padding-10">
+                                    <div class="row">
+                                      <div class="col-md-6 text-center">
+                                        <p class="small">Noon</p>
+                                        <canvas class="sleet" width="25" height="25"></canvas>
+                                        <p class="text-danger bold">30°C</p>
+                                      </div>
+                                      <div class="col-md-6 text-center">
+                                        <p class="small">Night</p>
+                                        <canvas class="wind" width="25" height="25"></canvas>
+                                        <p class="text-danger bold">30°C</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 text-center m-t-10 ">
+                              <div class="bg-master-lighter p-b-10 p-t-10">
+                                <h4 class="p-t-10 no-margin">Wednesday</h4>
+                                <p class="small hint-text m-b-20">11th Augest 2014</p>
+                                <canvas class="rain" width="64" height="64"></canvas>
+                                <h5 class="text-danger">32°</h5>
+                                <p>Feels like
+                                  <span class="bold">sunny</span>
+                                </p>
+                                <p class="small">Wind
+                                  <span class="bold p-l-20">11km/h</span>
+                                </p>
+                                <div class="m-t-20 block">
+                                  <div class="padding-10">
+                                    <div class="row">
+                                      <div class="col-md-6 text-center">
+                                        <p class="small">Noon</p>
+                                        <canvas class="sleet" width="25" height="25"></canvas>
+                                        <p class="text-danger bold">30°C</p>
+                                      </div>
+                                      <div class="col-md-6 text-center">
+                                        <p class="small">Night</p>
+                                        <canvas class="wind" width="25" height="25"></canvas>
+                                        <p class="text-danger bold">30°C</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END WIDGET -->
+              </div>
+                </div>
           <!-- END CONTAINER FLUID -->
         </div>
         <!-- END PAGE CONTENT -->
@@ -156,7 +523,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <div class="clearfix"></div>
 </div>
 </div>
- --
 </div>
  
 </div>
@@ -1516,9 +1882,9 @@ Customize and Preview your dashboard.
 <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
 <script src="pages/js/pages.min.js"></script>
  
- <!-- 
+  
 <script src="assets/js/dashboard.js" type="text/javascript"></script>
- --><script src="assets/js/scripts.js" type="text/javascript"></script>
+ <script src="assets/js/scripts.js" type="text/javascript"></script>
  
 <script src="assets/js/demo.js" type="text/javascript"></script>
 <script>
