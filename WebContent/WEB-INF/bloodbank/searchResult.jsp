@@ -66,13 +66,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </head>
 <body class="fixed-header dashboard">
  
-
-
-<%@ include file = "/WEB-INF/bloodbank/leftmenu.jsp" %>
- 
+<%@ include file = "/WEB-INF/bloodbank/leftmenu.jsp" %> 
 <div class="page-container ">
 <%@ include file = "/WEB-INF/bloodbank/Header.jsp" %>
- 
  
 <div class="page-content-wrapper ">
  

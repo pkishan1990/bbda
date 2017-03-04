@@ -67,7 +67,7 @@
             <span class="icon-thumbnail "><i class="pg-social"></i></span>
           </li>
           <li class="">
-            <a href="#"><span class="title">Inventory</span></a>
+            <a href="Inventory.htm"><span class="title">Inventory</span></a>
             <span class="icon-thumbnail"><i class="pg-calender"></i></span>
           </li>
           <li class="">
@@ -88,7 +88,7 @@
             <span class="icon-thumbnail"><i class="fa fa-leaf"></i></span>
           </li>
           <li class="">
-            <a href="#">
+            <a href="Issuance.htm">
               <span class="title">Issue Blood</span>
             </a>
             <span class="icon-thumbnail"><i class="fa fa-leaf"></i></span>
