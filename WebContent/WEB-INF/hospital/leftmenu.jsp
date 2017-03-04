@@ -39,57 +39,48 @@
         <!-- BEGIN SIDEBAR MENU ITEMS-->
         <ul class="menu-items">
           <li class="m-t-30 open">
-            <a href="dashboard.htm" class="detailed">
+            <a href="index.html" class="detailed">
               <span class="title">Dashboard</span>
-              <span class="details">No New Updates</span>
             </a>
             <span class="icon-thumbnail bg-success"><i class="pg-home"></i></span>
           </li>
           <li class="">
-            <a href="#" class="detailed">
+            <a href="email.html" class="detailed">
               <span class="title">Messages</span>
-              <span class="details">234 New messages</span>
             </a>
             <span class="icon-thumbnail "><i class="pg-mail"></i></span>
           </li>
           <li class="">
-            <a href="#"><span class="title">Profile</span></a>
+            <a href="social.html"><span class="title">Profile</span></a>
             <span class="icon-thumbnail "><i class="pg-social"></i></span>
           </li>
           <li class="">
-            <a href="Inventory.htm"><span class="title">Inventory</span></a>
+            <a href="calendar.html"><span class="title">Inventory</span></a>
             <span class="icon-thumbnail"><i class="pg-calender"></i></span>
           </li>
           <li class="">
-            <a href="#"><span class="title">Donors</span></a>
+            <a href="calendar.html"><span class="title">Donors</span></a>
             <span class="icon-thumbnail"><i class="fa  fa-users"></i></span>
           </li>
           <li class="">
-            <a href="#">
+            <a href="builder.html">
               <span class="title">Search Donor</span>
             </a>
             <span class="icon-thumbnail"><i class="fa  fa-user"></i></span>
           </li>
           
           <li class="">
-            <a href="Request.htm">
+            <a href="builder.html">
               <span class="title">Request Blood</span>
-            </a>
-            <span class="icon-thumbnail"><i class="fa fa-leaf"></i></span>
-          </li>
-          <li class="">
-            <a href="Issuance.htm">
-              <span class="title">Issue Blood</span>
             </a>
             <span class="icon-thumbnail"><i class="fa fa-leaf"></i></span>
           </li>
           
               
             </ul>
+          </li>
+        </ul>
         <div class="clearfix"></div>
       </div>
       <!-- END SIDEBAR MENU -->
     </nav>
-    
- 
- 
