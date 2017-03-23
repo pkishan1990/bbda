@@ -109,7 +109,14 @@ This tool is developed by Jaimin Kansara for personal use only. This cannot be u
  
 <button class="btn btn-primary btn-cons m-t-10" type="submit">Sign in</button>
 </form>
- 
+ <div class="row">
+              <div class="col-md-4 no-padding">
+                </div>
+              <div class="col-md-8 text-right">
+                <a href="signup.htm" class="text-danger small">Don't have account? Sign up for free.</a>
+              </div>
+            </div>
+            
 <div class="pull-bottom sm-pull-bottom">
 <div class="m-b-30 p-r-80 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix">
 <div class="col-sm-3 col-md-2 no-padding">

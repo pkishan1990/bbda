@@ -2,4 +2,5 @@ eclipse.preferences.version=1
 encoding//WebContent/WEB-INF/bloodbank/Dashboard.jsp=UTF-8
 encoding//WebContent/WEB-INF/bloodbank/Inventory.jsp=UTF-8
 encoding//WebContent/WEB-INF/bloodbank/searchResult.jsp=UTF-8
+encoding//WebContent/WEB-INF/hospital/Dashboard.jsp=UTF-8
 encoding//WebContent/WEB-INF/master/NewLogin.jsp=UTF-8

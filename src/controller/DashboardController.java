@@ -1,14 +1,6 @@
 package controller;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,12 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import service.StudentMasterService;
-
-import com.google.gson.Gson;
 
 @Controller
 public class DashboardController {
@@ -34,8 +23,11 @@ public class DashboardController {
 @RequestMapping(value = "/dashboard.htm", method = RequestMethod.GET)
 	public ModelAndView Dashboard(HttpServletRequest request,
 			HttpServletResponse response) {
+	
+	String role =request.getSession().getAttribute("role").toString();
 	Calendar calendar = Calendar.getInstance();
-	ModelAndView mv = new ModelAndView("bloodbank/Dashboard");
+	//ModelAndView mv = new ModelAndView("bloodbank/Dashboard");
+	ModelAndView mv = new ModelAndView("hospital/Dashboard");
 	/*
 	List<Object[]> Studentshavingbirthdays = this.studentMasterService.getUpcomingBirthdays();
 	Map<String,List<String>> upcomingBirthdsys = new HashMap<String, List<String>>();

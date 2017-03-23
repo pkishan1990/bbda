@@ -1,14 +1,9 @@
 package controller;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -22,24 +17,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.multipart.MultipartRequest;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.itextpdf.text.Document;
-import com.itextpdf.text.pdf.PdfWriter;
-import com.itextpdf.tool.xml.XMLWorkerHelper;
-import service.LoginService;
 import entity.Usermaster;
-import filter.MultiTenantConnectionProviderImpl;
+import service.LoginService;
 
 @Controller
 public class LoginController {
 
 	@Autowired
 	private LoginService loginService;
-	
-
 	
 	protected final Log logger = LogFactory.getLog(getClass());
 	
@@ -83,6 +70,7 @@ public class LoginController {
 			// request.getSession().setMaxInactiveInterval(2*60);//Session Will
 			// Expire After Ten Minutes
 			request.getSession().setAttribute("userName",ls.get(0).getUsername());
+			request.getSession().setAttribute("role", usermaster.getRole());
 			Cookie samplecookie = new Cookie("SampleCookie", usermaster.getUsername());
 			response.addCookie(samplecookie);
 			try {
@@ -106,6 +94,50 @@ public class LoginController {
 			e.printStackTrace();
 		}
 	}
+	
+	
+	
+	
+	@RequestMapping(value = "/signup.htm", method = RequestMethod.GET)
+	public ModelAndView signup(HttpServletRequest request,
+			HttpServletResponse response) {
+		ModelAndView mv = new ModelAndView("master/signup");
+	
+		
+		return mv;
+	}
+	@RequestMapping(value = "/createdonoraccount.htm", method = RequestMethod.POST)
+	public ModelAndView createdonoraccount(HttpServletRequest request,
+			HttpServletResponse response) {
+		
+		String username = request.getParameter("username");
+		String firstname = request.getParameter("fname");
+		String lastname = request.getParameter("lname");
+		String password = request.getParameter("password");
+		ModelAndView mv = new ModelAndView("master/NewLogin");
+		
+		SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
+		SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm");
+		
+		Usermaster usermaster = new Usermaster();
+		usermaster.setFirstname(firstname);
+		usermaster.setLastname(lastname);
+		usermaster.setUsername(username);
+		usermaster.setPassword(password);
+		usermaster.setRole(request.getParameter("role"));
+		try {
+			usermaster.setLogindate(dateFormat.parse(dateFormat.format(new Date())));
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		usermaster.setLogintime(timeFormat.format(new Date()));
+//		insert record
+		loginService.insertUserMaster(usermaster);
+		return mv;
+		
+	}
+	
 	
 	@RequestMapping(value = "/NewLogin.htm", method = RequestMethod.GET)
 	public ModelAndView NewLogin(HttpServletRequest request,
