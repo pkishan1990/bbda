@@ -30,6 +30,11 @@ public List<Donor> searchInDonors(String searchDonor) {
 	// TODO Auto-generated method stub
 	return bloodBankDao.searchInDonors(searchDonor);
 }
+@Override
+public List<Bloodbankmaster> searchInBloodBanks(String searchStr) {
+	// TODO Auto-generated method stub
+	return bloodBankDao.searchInBloodBanks(searchStr);
+}
 	
 	
 }

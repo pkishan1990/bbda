@@ -10,10 +10,14 @@ import entity.Studentmaster;
 public interface BloodBankService {
 
 	List<Bloodbankmaster> getListofBloodBanks();
+	
+	List<Bloodbankmaster> searchInBloodBanks(String searchStr);
 
 	List<Donor> getListofDonors();
 
 	List<Donor> searchInDonors(String searchStr);
 
+	
+	
 	
 }

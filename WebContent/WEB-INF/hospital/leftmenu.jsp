@@ -41,12 +41,14 @@
           <li class="m-t-30 open">
             <a href="index.html" class="detailed">
               <span class="title">Dashboard</span>
+              <span class="details">12 New Updates</span>
             </a>
             <span class="icon-thumbnail bg-success"><i class="pg-home"></i></span>
           </li>
           <li class="">
             <a href="email.html" class="detailed">
               <span class="title">Messages</span>
+              <span class="details">234 New messages</span>
             </a>
             <span class="icon-thumbnail "><i class="pg-mail"></i></span>
           </li>
@@ -84,3 +86,4 @@
       </div>
       <!-- END SIDEBAR MENU -->
     </nav>
+    

@@ -60,5 +60,18 @@ public class BloodBankDaoImpl extends HibernateDaoSupport implements BloodBankDa
 		
 		
 	}
+
+	@Override
+	public List<Bloodbankmaster> searchInBloodBanks(String searchStr) {
+		MultiTenantConnectionProviderImpl impl = new MultiTenantConnectionProviderImpl();
+		Session session = this.sessionFactory.withOptions().tenantIdentifier(impl.APPLICATION_USER).openSession();
+		Transaction tx = session.beginTransaction();
+		List<Bloodbankmaster> ls =   session.createQuery("From bloodbankmaster where upper(bloodbankname) like upper('%"+searchStr+"%')  ").list();
+		tx.commit();
+		session.close();
+		
+		System.out.println("search result found: "+ls.size());
+		return ls;
+	}
 	
 }
