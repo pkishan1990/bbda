@@ -24,7 +24,7 @@ public class BloodBankDaoImpl extends HibernateDaoSupport implements BloodBankDa
 		MultiTenantConnectionProviderImpl impl = new MultiTenantConnectionProviderImpl();
 		Session session = this.sessionFactory.withOptions().tenantIdentifier(impl.APPLICATION_USER).openSession();
 		Transaction tx = session.beginTransaction();
-		List<entity.Bloodbankmaster> ls =   session.createQuery("From donor ").list();
+		List<entity.Bloodbankmaster> ls =   session.createQuery("From Bloodbankmaster ").list();
 		tx.commit();
 		session.close();
 		return ls;
@@ -66,7 +66,7 @@ public class BloodBankDaoImpl extends HibernateDaoSupport implements BloodBankDa
 		MultiTenantConnectionProviderImpl impl = new MultiTenantConnectionProviderImpl();
 		Session session = this.sessionFactory.withOptions().tenantIdentifier(impl.APPLICATION_USER).openSession();
 		Transaction tx = session.beginTransaction();
-		List<Bloodbankmaster> ls =   session.createQuery("From bloodbankmaster where upper(bloodbankname) like upper('%"+searchStr+"%')  ").list();
+		List<Bloodbankmaster> ls =   session.createQuery("From Bloodbankmaster where upper(bloodbankname) like upper('%"+searchStr+"%')  ").list();
 		tx.commit();
 		session.close();
 		

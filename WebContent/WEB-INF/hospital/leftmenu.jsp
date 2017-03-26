@@ -39,7 +39,7 @@
         <!-- BEGIN SIDEBAR MENU ITEMS-->
         <ul class="menu-items">
           <li class="m-t-30 open">
-            <a href="index.html" class="detailed">
+            <a href="dashboard.htm" class="detailed">
               <span class="title">Dashboard</span>
               <span class="details">12 New Updates</span>
             </a>
@@ -72,7 +72,7 @@
           </li>
           
           <li class="">
-            <a href="builder.html">
+            <a href="Requestblood.htm">
               <span class="title">Request Blood</span>
             </a>
             <span class="icon-thumbnail"><i class="fa fa-leaf"></i></span>
