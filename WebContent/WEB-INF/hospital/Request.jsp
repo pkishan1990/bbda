@@ -39,7 +39,7 @@
   </head>
   <body class="fixed-header dashboard">
   
-<%@ include file = "/WEB-INF/bloodbank/leftmenu.jsp" %> 
+<%@ include file = "/WEB-INF/hospital/leftmenu.jsp" %> 
 <div class="page-container ">
 <%@ include file = "/WEB-INF/bloodbank/Header.jsp" %>
 
@@ -72,41 +72,27 @@ Select Blood Bank
                             </select>
                           </div>
                       </div><br>
-                    
-                    Select Blood Group<br>
+                     
+                     Select Blood Group<br>
                       <div class="form-group form-group-default required">
 						  
                        <form role="form">
                       <div class="form-group ">
                         <select class="full-width" data-init-plugin="select2">
-							 <option value="AK">Select</option>
+							<option value="AK">Select</option>
                             <option value="HI">O+</option>
                             <option value="HI">O-</option>
                             <option value="HI">A+</option>
                             <option value="HI">A-</option>
                             <option value="HI">B+</option>
                             <option value="HI">B-</option>
-                             <option value="HI">AB+</option>
+                            <option value="HI">AB+</option>
                             <option value="HI">AB-</option>
-                            </select>
-                          </div>
-                          
-                      </div><br>
-                       <button class="btn btn-success btn-cons">CHECK AVAILABILTY</button><br><br>
-                      
-                     Blood Bank
-                     
-                      <div class="form-group form-group-default required">
-                        <form role="form">
-                      <div class="form-group ">
-                        <select class="full-width" data-init-plugin="select2">
-							
-                            <option value="AK">Select</option>
-                            <option value="HI">Hawaii</option>
-                            </select>
+                          </select>
                           </div>
                       </div><br>
-                      
+                     <button class="btn btn-success btn-cons">CHECK AVAILABILTY</button><br><br>
+                       
                       Quantity
                       <div class="form-group form-group-default required">
                         <label></label>

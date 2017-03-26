@@ -95,9 +95,6 @@ public class LoginController {
 		}
 	}
 	
-	
-	
-	
 	@RequestMapping(value = "/signup.htm", method = RequestMethod.GET)
 	public ModelAndView signup(HttpServletRequest request,
 			HttpServletResponse response) {
@@ -106,6 +103,7 @@ public class LoginController {
 		
 		return mv;
 	}
+	
 	@RequestMapping(value = "/createdonoraccount.htm", method = RequestMethod.POST)
 	public ModelAndView createdonoraccount(HttpServletRequest request,
 			HttpServletResponse response) {

@@ -14,6 +14,5 @@ public interface BloodBankDao {
 	List<Donor> searchInDonors(String searchStr);
 
 	List<Bloodbankmaster> searchInBloodBanks(String searchStr);
-	
-	
+
 }
