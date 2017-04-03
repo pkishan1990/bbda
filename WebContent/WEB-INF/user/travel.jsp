@@ -55,59 +55,113 @@
        <div class="content sm-gutter">
           <!-- START CONTAINER FLUID -->
           <div class="container-fluid padding-25 sm-padding-10">
-            
-            <div class="row">
-            <div class="col-md-4">
-            <div class="panel  " style="background-color: beige">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Option one
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <h5>
-                                    Search by blood bank
-                                </h5>
-                    <form role="form" id="perform1" action="searchbloodbank.htm" method="post">
-             
-                      <div class="form-group">
-                        <label>Blood Bank :</label>
-                        <span class="help">e.g. "Care Blood Bank"</span>
-                        <input required type="text" id="bloodbankname" name="bloodbankname" class="form-control">
-                      </div>
-                      
-                      <button class="btn btn-primary btn-cons" name="hospitals" type="submit">Search</button>   
-             </form>       
-                  </div>
-                </div>
-                <!-- END PANEL -->
-            </div>
-            <div class="col-md-4">
-            <div class="panel  " style="background-color: beige">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Option two
-                    </div>
-                  </div>
-                   <div class="panel-body">
-                    <h5>
-                             Search donors 
-                                </h5>
-                    <form role="form" id="perForm" action="searchdonorfromhistory.htm" method="post">
-                      <div class="form-group">
-                        <label>Blood donors :</label>
-                        <span class="help">e.g. "Bill Gates" or blood group e.g "A+"</span>
-                        <input type="text" id="donorName" name="donorName" class="form-control" required>
-                      </div>
-                      <button class="btn btn-primary btn-cons " type="submit">Search</button>
-                         
-                    </form>
-                  </div>
-                </div>
-                <!-- END PANEL -->
-            </div>
-            
+        
+        
+        
+        <div class="panel-display laurier clearfix" id="page-page">
+    <div id="wb-main" role="main">
+    <div id="wb-main-in">
+      <div class="region-laurier-first">
+        <div class="panel-pane pane-block pane-bean-print-page-button">
+  
+      
+ 
+ <div class="panel-display laurier clearfix" id="page-page">
+    <div id="wb-main" role="main">
+    <div id="wb-main-in">
+      <div class="region-laurier-first">
+        <div class="panel-pane pane-block pane-bean-print-page-button">
+  
+      
+  
+  <div class="pane-content">
+    <section>
+  <div class="field field--name-field-bean-wetkit-body field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even"><a href="#" onclick="window.print();" title="Print this page" class="cbs-print-page"><span>Print this page</span></a>
+</div></div></div></section>
+  </div>
+
+  
+  </div>
+<div class="panel-pane pane-node-title">
+ <div class="pane-content">
+    <h1 class="text-primary">Travel</h1>
+  </div>
+ </div>
+<div class="panel-pane pane-node-content">
+  
+ <div class="pane-content">
+    <article id="node-333" role="article" class="node node--blood-page node--promoted node--full node--blood-page--full">
+        <div class="node__content">
+
+<h3 class="text-primary">How Can Travel Have an Impact on My Eligibility to Give Blood?</h3>
+
+<p>Visiting different regions of the world can put you at greater risk of exposure to diseases. To protect blood recipients, our screening process includes checking for time spent in these areas.</p>
+
+<h3 class="text-primary">Did you travel to a Zika risk country?</h3>
+
+<p>Travel outside of Canada, the continental U.S. or Europe may have exposed you to the Zika virus.</p>
+
+<p>Not all countries outside of Canada, continental U.S. and Europe have Zika virus, but it is spreading rapidly so to ensure safety of the blood supply, travel outside these areas will require a short wait before donating blood.</p>
+
+<p>Donors who have travelled to locations outside of Canada, the continental U.S. and Europe must wait 21 days after their return home before donating blood.</p>
+
+
+<h3 class="text-primary">Did you travel to a malaria risk country?</h3>
+
+<p>Depending on the length of your stay in an affected region and risk you've encountered your waiting period to donate whole blood or platelets will vary.</p>
+
+<ul><li>If your stay in a malaria risk area was less than 6 months, you will need to wait 1 year from the date of your return.</li>
+	<li>If your stay was 6 months or more, you will need to wait 3 years. For other conditions, the deferral may be indefinite. Talk to us at Canadian Blood Services if you have questions about the impact of travel on your eligibility to donate.</li>
+	<li>If you wish to donate apheresis plasma donations (available at some Canadian Blood Services clinics) for the purpose of being sent to a fractionator, you may do so 6 months after departure from a malaria endemic area, regardless of the duration of your stay. If you are interested in making an apheresis plasma donation, please call us at 1-888-236-6283 for more information.</li>
+</ul>
+<h3 class="text-primary">Did you travel to the UK, France or Saudi Arabia from 1980 through 1996? Or to Western Europe from 1980 through 2007? If so, read more…</h3>
+
+<strong>You are not eligible to donate if you have:</strong>
+<ul><li>Spent a cumulative total of three months or more in the United Kingdom (UK) between January 1980 and December 31, 1996</li>
+	<li>Spent a cumulative total of three months or more in France between January 1980 and December 31, 1996</li>
+	<li>Spent a cumulative total of five years or more in Western Europe outside the U.K. or France from January 1, 1980 through December 31, 2007.  Western European countries affected are Germany, Italy, Netherlands, Switzerland, Austria, Belgium, Spain, Republic of Ireland, Portugal, Denmark, Luxembourg, and Liechtenstein.</li>
+	<li>Spent a cumulative total of six months or more in Saudi Arabia from January 1, 1980 through December 31, 1996</li>
+</ul><h3 class="text-primary">More information on Malaria:</h3>
+
+		<h4 class="text-primary">How Does Canadian Blood Services Determine Which Areas or Countries Are Risk Areas for Malaria?</h4>
+
+		<p>We use a list provided by the U.S. Centers for Disease Control and Prevention to identify malaria-endemic areas, and edit that list for clarity (e.g., if the list is not precise, saying there is a risk “in northern areas only”, we expand our criteria to include the whole state, province or, in some cases, the country).</p>
+
+		<h4 class="text-primary">Does Canadian Blood Services Test for Malaria?</h4>
+
+		<p>Today, there is no available test in Canada to screen blood donors for malaria. In the absence of an available test, we rely on thorough donor screening and health assessments to protect the blood system. Our malaria policy applies to all donors, even those who have taken anti-malarial medication. This is because some medications are believed to mask malarial symptoms for a period of time, prolonging the onset of the disease. As well, some zones contain medication-resistant strains of malaria. The longer you stay in a malaria risk zone, the more likely you are to come in contact with the disease. Our precautionary approach includes a longer deferral period for people who have spent six consecutive months or more in a malaria risk zone.</p>
+
+		<h4 class="text-primary">I Have Fully Recovered from Malaria. Can I Donate Blood?</h4>
+
+		<p>We do not accept whole blood or platelets from individuals who have had malaria. Even if you are fully recovered, there is a chance you may still be carrying the malarial parasite in your red blood cells and platelets. You may give a plasma only donation (Plasmapheresis) at a Canadian Blood Services clinic that has the equipment to perform this specialized procedure, provided you have been recovered from malaria for more than 6 months.</p>
+<div class="clear"></div>
+</article>
+  </div>
+
+  
+  </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+   <div class="pane-content">
+    <div class="entity entity-bean bean-how-else-can-i-help clearfix">
+
+ 
 </div>
+  </div>
+
+  
+  </div>
+  </div>
+  <div class="clear"></div>
+  </div>
+  
+  </div>
+  </div>
+  <div class="clear"></div>
+  </div>
+        
           <!-- END CONTAINER FLUID -->
         </div>
         <!-- END PAGE CONTENT -->

@@ -27,40 +27,17 @@ public class DashboardController {
 	String role =request.getSession().getAttribute("role").toString();
 	Calendar calendar = Calendar.getInstance();
 	//ModelAndView mv = new ModelAndView("bloodbank/Dashboard");
-	//ModelAndView mv = new ModelAndView("hospital/Dashboard");
-	ModelAndView mv = new ModelAndView("user/Dashboard");
-	/*
-	List<Object[]> Studentshavingbirthdays = this.studentMasterService.getUpcomingBirthdays();
-	Map<String,List<String>> upcomingBirthdsys = new HashMap<String, List<String>>();
-	for (Iterator iterator = Studentshavingbirthdays.iterator(); iterator
-			.hasNext();) {
-		Object[] objects = (Object[]) iterator.next();
-		
-		List<String> ls  = new ArrayList<String>();		
-		try {
-			calendar.setTime(new SimpleDateFormat("yyyy-MM-dd").parse(objects[1].toString()));
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		ls.add(calendar.get(Calendar.DAY_OF_MONTH)+"");
-		ls.add(objects[0].toString());
-		ls.add(objects[2].toString());
-		ls.add(objects[3].toString());
-		upcomingBirthdsys.put(objects[4].toString()+"",ls);
-		
+	ModelAndView mv = null;
+	
+	
+	if(role.equalsIgnoreCase("bloodbank")){
+		mv = new ModelAndView("bloodbank/Dashboard");
+	}else if (role.equalsIgnoreCase("user")) {
+		mv =new ModelAndView("user/Dashboard");
+	}else if (role.equalsIgnoreCase("hospital")) {
+		mv = new ModelAndView("hospital/Dashboard");
 	}
-	
-	calendar.setTime(new Date());
-	calendar.add(Calendar.DATE, -2);
-	Date dt = calendar.getTime() ;
-	mv.addObject("bdayfrom",calendar.get(Calendar.DAY_OF_MONTH));
-	mv.addObject("bdaymonth",new SimpleDateFormat("MMM").format(dt) );
-	calendar.add(Calendar.DATE, 9);
-	mv.addObject("bdayto",calendar.get(Calendar.DAY_OF_MONTH));
-	
-	mv.addObject("UpcomingDates", upcomingBirthdsys);
-	*/
+
 	return mv;
 	}
 
@@ -80,3 +57,4 @@ public class DashboardController {
 //}
 
 }
+

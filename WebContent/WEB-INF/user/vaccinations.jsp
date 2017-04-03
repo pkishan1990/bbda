@@ -55,59 +55,221 @@
        <div class="content sm-gutter">
           <!-- START CONTAINER FLUID -->
           <div class="container-fluid padding-25 sm-padding-10">
-            
-            <div class="row">
-            <div class="col-md-4">
-            <div class="panel  " style="background-color: beige">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Option one
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <h5>
-                                    Search by blood bank
-                                </h5>
-                    <form role="form" id="perform1" action="searchbloodbank.htm" method="post">
-             
-                      <div class="form-group">
-                        <label>Blood Bank :</label>
-                        <span class="help">e.g. "Care Blood Bank"</span>
-                        <input required type="text" id="bloodbankname" name="bloodbankname" class="form-control">
-                      </div>
-                      
-                      <button class="btn btn-primary btn-cons" name="hospitals" type="submit">Search</button>   
-             </form>       
-                  </div>
-                </div>
-                <!-- END PANEL -->
-            </div>
-            <div class="col-md-4">
-            <div class="panel  " style="background-color: beige">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Option two
-                    </div>
-                  </div>
-                   <div class="panel-body">
-                    <h5>
-                             Search donors 
-                                </h5>
-                    <form role="form" id="perForm" action="searchdonorfromhistory.htm" method="post">
-                      <div class="form-group">
-                        <label>Blood donors :</label>
-                        <span class="help">e.g. "Bill Gates" or blood group e.g "A+"</span>
-                        <input type="text" id="donorName" name="donorName" class="form-control" required>
-                      </div>
-                      <button class="btn btn-primary btn-cons " type="submit">Search</button>
-                         
-                    </form>
-                  </div>
-                </div>
-                <!-- END PANEL -->
-            </div>
-            
+      <div id="wb-main-in">
+      <div class="region-laurier-first">
+        <div class="panel-pane pane-block pane-bean-print-page-button">
+ <div class="pane-content">
+    <section>
+  <div class="field field--name-field-bean-wetkit-body field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even"><a href="#" onclick="window.print();" title="Print this page" class="cbs-print-page"><span>Print this page</span></a>
+</div></div></div></section>
+  </div>
 </div>
+<div class="panel-pane pane-node-title">
+  
+ <div class="pane-content">
+    <h1 class="text-primary">Vaccinations</h1>
+  </div>
+
+  
+  </div>
+<div class="panel-pane pane-node-content">
+  
+      
+  
+  <div class="pane-content">
+    <article id="node-449" role="article" class="node node--blood-page node--promoted node--full node--blood-page--full">
+        <div class="node__content">
+    <div class="field field--name-body field--type-text-with-summary field--label-hidden"><div class="field__items"><div class="field__item even"><h2>Can You Give Blood?</h2>
+
+<p>The blood system in Canada is one of the safest in the world. Donors are selected based on eligibility criteria to protect both their own health and that of a person whose blood is transfused. Vaccines are among these factors. The list of the most common vaccines and corresponding exclusion periods shown below.&nbsp;</p>
+
+<p>For a complete list of eligibility requirements, please call 1&nbsp;888&nbsp;2&nbsp;DONATE (1-888-236-6283)</p>
+
+<h3 class="text-primary">Vaccines</h3>
+
+<table border="1" cellpadding="1" cellspacing="1" class="cbs-table-simplify width-100"><tbody><tr><th class="cbs-sub-accent" width="50%"><strong><span class="whiteBold">Vaccine For:</span></strong></th>
+			<th class="cbs-sub-accent" width="50%"><strong><span class="whiteBold">Deferral Period:</span></strong></th>
+		</tr><tr><td>
+				<p>Anthrax</p>
+			</td>
+			<td>
+				<p>No deferral</p>
+			</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>BCG</p>
+			</td>
+			<td>
+				<p>6 weeks</p>
+			</td>
+		</tr><tr><td>
+				<p>Chicken Pox (Varivax)</p>
+			</td>
+			<td>
+				<p>3 months</p>
+			</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Cholera (Metacol Berna)</p>
+			</td>
+			<td>
+				<p>4 weeks</p>
+			</td>
+		</tr><tr><td>
+				<p>Cholera, oral (Dukoral)</p>
+			</td>
+			<td>
+				<p>No deferral</p>
+			</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Diarrhea (traveller's), oral (Dukoral)</p>
+			</td>
+			<td>
+				<p>No deferral</p>
+			</td>
+		</tr><tr><td>
+				<p>Diphtheria (Tetanus, Pertussis (Boostrix)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Diphtheria (Adacel, Boostrix)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr><td>
+				<p>Encephalitis, Japanese (Ixiaro)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Flu Shot (influenza vaccine)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr><td>
+				<p>Hepatitis A (Avaxim, Epaxal, Havrix, Vaqta, Vivaxim)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Hepatitis A and Hepatitis B (Twinrix)&nbsp;</p>
+			</td>
+			<td>4 weeks</td>
+		</tr><tr><td>
+				<p>Hepatitis B (Engerix B, Recombivax–HB)</p>
+			</td>
+			<td>4 weeks</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Herpes Zoster, that is Shingles (Zostavax)</p>
+			</td>
+			<td>3 months</td>
+		</tr><tr><td>
+				<p>Human Papillomavirus (Gardasil, Cervarix)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Influenza, Flumist (intranasal)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr><td>
+				<p>Measles, Mumps, Rubella (MMR)&nbsp;</p>
+			</td>
+			<td>4 weeks</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Measles, that is Rubeola (MMR)</p>
+			</td>
+			<td>4 weeks</td>
+		</tr><tr><td>
+				<p>Meningococcal (Meningitec, Menjugate, Menactra, Menveo, Nimenrix, Bexsero)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Mumps (MMR)&nbsp;</p>
+			</td>
+			<td>4 weeks</td>
+		</tr><tr><td>
+				<p>Paratyphoid</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Pertussis (Adacel, Boostrix)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr><td>
+				<p>Plague</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Pneumococcal (Pneumovax, Prevnar)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr><td>
+				<p>Polio (Sabin, oral)</p>
+			</td>
+			<td>6 weeks</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Polio, by injection (Salk, Imovax, IPV)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr><td>
+				<p>Rabies -&nbsp;Treatment after exposure with Immune Globulin</p>
+			</td>
+			<td>52 weeks</td>
+		</tr><tr class="cbs-zebra"><td>Rabies -&nbsp;
+				<p>Treatment after exposure (RabAvert only, no immune globulin given)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr><td>Rabies -&nbsp;
+				<p>Pre-exposure prophylaxis (RabAvert)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Rocky Mountain Spotted Fever</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr><td>
+				<p>Rubella, that is German Measles (MMR)</p>
+			</td>
+			<td>4 weeks</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Tetanus (Adacel, Boostrix)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr><td>
+				<p>Tick Born Encephalitis (FSME-IMMUN)&nbsp;</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Typhoid (Typherix, Typhim Vi, Vivaxim)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr><td>
+				<p>Typhoid (Vivotif oral)</p>
+			</td>
+			<td>4 weeks</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Typhoid, Hepatitis A (Vivaxim)</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr><td>
+				<p>Typhus</p>
+			</td>
+			<td>No deferral</td>
+		</tr><tr class="cbs-zebra"><td>
+				<p>Yellow Fever</p>
+			</td>
+			<td>4 weeks</td>
+		</tr></tbody></table><p>&nbsp;</p>
+</div></div></div>  </div>
+        <div class="clear"></div>
+</article>
+  </div>
+
+  
+  </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  
+  </div>
+  </div>
+  <div class="clear"></div>
+  </div>
+        
           <!-- END CONTAINER FLUID -->
         </div>
         <!-- END PAGE CONTENT -->

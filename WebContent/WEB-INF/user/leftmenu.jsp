@@ -39,7 +39,7 @@
         <!-- BEGIN SIDEBAR MENU ITEMS-->
         <ul class="menu-items">
           <li class="m-t-30 open">
-            <a href="index.html" class="detailed">
+            <a href="./dashboard.htm" class="detailed">
               <span class="title">Dashboard</span>
               <span class="details">12 New Updates</span>
             </a>
@@ -51,6 +51,29 @@
               <span class="details">234 New messages</span>
             </a>
             <span class="icon-thumbnail "><i class="pg-mail"></i></span>
+          </li>
+          <li class="">
+            <a><span class="title">Can I donate?</span>
+            <span class=" arrow"></span></a>
+            <span class="icon-thumbnail">CI</span>
+            <ul class="sub-menu">
+              <li class="">
+                <a href="iron.htm">Iron</a>
+                <span class="icon-thumbnail">I</span>
+              </li>
+              <li class="">
+                <a href="vaccinations.htm">Vaccinations</a>
+                <span class="icon-thumbnail">V</span>
+              </li>
+              <li class="">
+                <a href="travel.htm">Travel</a>
+                <span class="icon-thumbnail">T</span>
+              </li>
+              </ul>
+          </li>
+           <li class="">
+            <a href="eligibilitytest.htm"><span class="title">Eligibility Test</span></a>
+            <span class="icon-thumbnail "><i class="pg-social"></i></span>
           </li>
           <li class="">
             <a href="social.html"><span class="title">Profile</span></a>

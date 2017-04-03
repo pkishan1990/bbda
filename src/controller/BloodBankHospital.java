@@ -18,6 +18,8 @@ import entity.Bloodbankmaster;
 import entity.Donor;
 import service.BloodBankService;
 
+
+
 @Controller
 public class BloodBankHospital {
 
@@ -64,7 +66,7 @@ private BloodBankService bloodBankService;
 public ModelAndView SearchBloodBank(HttpServletRequest request,
 		HttpServletResponse response) {
 	
-ModelAndView mv = new ModelAndView("hospital/searchBloodBank");
+ModelAndView mv = new ModelAndView("hospital/searchBloodBank"); 
 String searchStr = request.getParameter("bloodbankname");
 Map<String,String[]> list_banks = new HashMap<String, String[]>();
 List<Bloodbankmaster> ls1 = bloodBankService.getListofBloodBanks();
@@ -74,7 +76,7 @@ try {
 	for (Iterator iterator = ls.iterator(); iterator.hasNext();) {
 		Bloodbankmaster bm = (Bloodbankmaster) iterator.next();
 		
-		String str[] = new String[8];
+		String str[] = new String[6];
 		str[0] = bm.getBloodbankname();
 		str[1] = bm.getBankphone1();
 		str[2] = bm.getBankaddress();
@@ -96,36 +98,6 @@ mv.addObject("ListOfBanks",list_banks);
 
 return mv;
 }
-
-//user controller starts here
-
-@RequestMapping(value = "/iron.htm", method = RequestMethod.GET)
-public ModelAndView Iron(HttpServletRequest request,
-		HttpServletResponse response) {
-	
-ModelAndView mv = new ModelAndView("user/iron");
-
-return mv;
-}
-
-@RequestMapping(value = "/travel.htm", method = RequestMethod.GET)
-public ModelAndView travel(HttpServletRequest request,
-		HttpServletResponse response) {
-	
-ModelAndView mv = new ModelAndView("user/travel");
-
-return mv;
-}
-
-@RequestMapping(value = "/vaccinations.htm", method = RequestMethod.GET)
-public ModelAndView vaccinations(HttpServletRequest request,
-		HttpServletResponse response) {
-	
-ModelAndView mv = new ModelAndView("user/vaccinations");
-
-return mv;
-}
-
 
 
 }

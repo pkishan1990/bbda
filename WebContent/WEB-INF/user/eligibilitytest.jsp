@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>Blood Bank User </title>
+    <title>Blood Bank Dashboard </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="apple-touch-icon" href="pages/ico/60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
@@ -29,6 +29,7 @@
     <link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
     <link href="assets/plugins/jquery-metrojs/MetroJs.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+   <!--   <script src="assets/js/eligibilitytest.js"></script>-->
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
     <!--[if lte IE 9]>
         <link href="pages/css/ie9.css" rel="stylesheet" type="text/css" />
@@ -46,66 +47,224 @@
     </script>
   </head>
   <body class="fixed-header  dashboard ">
-
+   
  <%@ include file = "/WEB-INF/user/leftmenu.jsp" %>
  
 <div class="page-container ">
 <%@ include file = "/WEB-INF/bloodbank/Header.jsp" %>
-
-       <div class="content sm-gutter">
+   
+        <div class="content sm-gutter">
           <!-- START CONTAINER FLUID -->
           <div class="container-fluid padding-25 sm-padding-10">
-            
+            <br><br>
             <div class="row">
-            <div class="col-md-4">
-            <div class="panel  " style="background-color: beige">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Option one
+            <div class="col-md-12">
+          <div class="panel-body">
+                    <h5>Blood Eligibility Test</h5><br>
+                    <form class="" role="form">
+                      <div class="col-md-6">
+                   <label>Are you over 17 years old?</label>
+                    <!--  If answer Yes then accept blood -->
+                    <div class="radio radio-success">
+                      <input type="radio" value="yes" name="yearspass" id="yearyes">
+                      <label for="yearyes">Yes</label>
+                      <input type="radio" value="no" name="yearspass" id="yearno">
+                      <label for="yearno">No</label>
                     </div>
-                  </div>
-                  <div class="panel-body">
-                    <h5>
-                                    Search by blood bank
-                                </h5>
-                    <form role="form" id="perform1" action="searchbloodbank.htm" method="post">
-             
-                      <div class="form-group">
-                        <label>Blood Bank :</label>
-                        <span class="help">e.g. "Care Blood Bank"</span>
-                        <input required type="text" id="bloodbankname" name="bloodbankname" class="form-control">
-                      </div>
+                      </div><br>
                       
-                      <button class="btn btn-primary btn-cons" name="hospitals" type="submit">Search</button>   
-             </form>       
-                  </div>
-                </div>
-                <!-- END PANEL -->
-            </div>
-            <div class="col-md-4">
-            <div class="panel  " style="background-color: beige">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Option two
+                     <div class="col-md-6">
+                       <!--  If answer No then Dont accept blood -->
+                   <label>Do you have had a tattoo or piercing in the last 6 months?</label>
+                        <div class="radio radio-success">
+                      <input type="radio" value="yes" name="tatoo" id="tattooyes">
+                      <label for="tattooyes">Yes</label>
+                      <input type="radio" value="no" name="tatoo" id="tattoono">
+                      <label for="tattoono">No</label>
                     </div>
-                  </div>
-                   <div class="panel-body">
-                    <h5>
-                             Search donors 
-                                </h5>
-                    <form role="form" id="perForm" action="searchdonorfromhistory.htm" method="post">
-                      <div class="form-group">
-                        <label>Blood donors :</label>
-                        <span class="help">e.g. "Bill Gates" or blood group e.g "A+"</span>
-                        <input type="text" id="donorName" name="donorName" class="form-control" required>
-                      </div>
-                      <button class="btn btn-primary btn-cons " type="submit">Search</button>
-                         
+                      </div><br>
+                      
+                      <!--  https://blood.ca/en/blood/eligibility-quiz -->
+                      
+                       <div class="col-md-6">
+                        <!--  If answer No then Dont accept blood -->
+                   <label>Do you  have had a cleaning or a filling in the last 24 hours or dental surgery in the last 72 hours?</label>
+                        <div class="radio radio-success">
+                      <input type="radio" value="yes" name="dental" id="dentalyes">
+                      <label for="dentalyes">Yes</label>
+                      <input type="radio" value="no" name="dental" id="dentalno">
+                      <label for="dentalno">No</label>
+                    </div>
+                      </div><br>
+                      
+                        
+                   <div class="col-md-6">
+                   <label>Do you have been pregnant or had a baby in the last 6 months?</label>
+                        <div class="radio radio-success">
+                      <input type="radio" value="yes" name="pregnant" id="pregnantyes">
+                      <label for="pregnantyes">Yes</label>
+                      <input type="radio" value="no" name="pregnant" id="pregnantno">
+                      <label for="pregnantno">No</label>
+                    </div>
+                    </div><br>
+                    
+                    <div class="col-md-6">
+                   <label>Have you consumed alcholol or tobacco or drugs within three days prior to blood donation?</label>
+                        <div class="radio radio-success">
+                      <input type="radio" value="yes" name="tobacco" id="tobaccoyes">
+                      <label for="tobaccoyes">Yes</label>
+                      <input type="radio" value="no" name="tobacco" id="tobaccono">
+                      <label for="tobaccono">No</label>
+                    </div>
+                    </div><br>
+                    
+                    <div class="col-md-6">
+                   <label>Have you had donated blood within past 3 months?</label>
+                        <div class="radio radio-success">
+                      <input type="radio" value="yes" name="donated" id="donatedyes">
+                      <label for="donatedyes">Yes</label>
+                      <input type="radio" value="no" name="donated" id="donatedno">
+                      <label for="donatedno">No</label>
+                    </div>
+                    </div><br>
+                    
+                      
+                      <div class="col-md-6">
+                       <!--  If answer No then Dont accept blood -->
+                   <label>Are you taking prescription medications?</label>
+                        <div class="radio radio-success">
+                      <input type="radio" value="yes" name="medications" id="medicationsyes">
+                      <label for="medicationsyes">Yes</label>
+                      <input type="radio" value="no" name="medications" id="medicationsno">
+                      <label for="medicationsno">No</label>
+                    </div>
+                      </div><br>
+                      
+                      <div class="col-md-6">
+                      <!--  If answer yes then accept blood -->
+                   <label>Do you weigh more than 110 lbs?</label>
+                        <div class="radio radio-success">
+                      <input type="radio" value="yes" name="weight" id="weightyes">
+                      <label for="weightyes">Yes</label>
+                      <input type="radio" value="no" name="weight" id="weightno">
+                      <label for="weightno">No</label>
+                    </div>
+                      </div><br>
+                   <br>
+                   <script>
+					function btnCheckEligibility(){
+						function findSelection(field) {
+						    var test = document.getElementsByName(field);
+						    var sizes = test.length;
+						    var answers = [];
+						        for (i=0; i < sizes; i++) {
+						            if (test[i].checked==true) {
+						            return test[i].value;
+						        }
+						    }
+						}
+						var flagforyearspass = 0;
+						var flagfortatoo = 0;
+						var flagfordental = 0;
+						var flagforpregnant = 0;
+						var flagfortobacco = 0;
+						var flagfordonated = 0;
+						var flagformedications = 0;
+						var flagforweight = 0;
+						var makeSelection = 0;
+						var yearspass = findSelection("yearspass");
+						var tatoo = findSelection("tatoo");
+						var dental = findSelection("dental"); 
+						var pregnant = findSelection("pregnant");
+						var tobacco = findSelection("tobacco");
+						var donated = findSelection("donated");
+						var medications = findSelection("medications");
+						var weight  = findSelection("weight");
+						if(yearspass == "yes"){
+							flagforyearspass = 1;
+						} else if(yearspass == "no"){
+							flagforyearspass = 0;
+						}else{
+							makeSelection = 1;
+						}
+						
+						if(tatoo == "no"){
+							flagfortatoo = 1;
+						}else if(tatoo == "yes"){
+							flagfortatoo = 0;
+						}else{
+							makeSelection = 1;
+						}
+						
+						if(dental == "no"){
+							flagfordental = 1;
+						}else if(dental == "yes"){
+							flagfordental = 0;
+						}else{
+							makeSelection = 1;
+						}
+						
+						if(pregnant == "no"){
+							flagforpregnant = 1;
+						}else if(pregnant == "yes"){
+							flagforpregnant = 0;
+						}else{
+							makeSelection = 1;
+						}
+						
+						if(tobacco == "no"){
+							flagfortobacco = 1;
+						}else if(tobacco == "yes"){
+							flagfortobacco = 0;
+						}else{
+							makeSelection = 1;
+						}
+						
+						if(donated == "no"){
+							flagfordonated = 1;
+						}else if(donated == "yes"){
+							flagfordonated = 0;
+						}else{
+							makeSelection = 1;
+						}
+						
+						if(medications == "no"){
+							flagformedications = 1;
+						}else if(tobacco == "yes"){
+							flagformedications = 0;
+						}else{
+							makeSelection = 1;
+						}
+						
+						if(weight == "no"){
+							flagforweight = 1;
+						}else if(weight == "yes"){
+							flagforweight = 0;
+						}else{
+							makeSelection = 1;
+						}
+						
+						if(makeSelection == 1){
+							alert("Please Answer All Questions");
+						}else{
+							if(flagforyearspass == 1 && flagfortatoo == 1 &&  flagfordental == 1 && flagfortobacco == 1 && flagfordonated == 1 && flagformedications == 1 && flagforweight == 1) {
+								alert("Eligible");
+							}else{
+								alert("Not Eligible");
+							}
+						}
+					}
+					
+				</script>
+                    <button class="btn btn-primary btn-cons" onclick="btnCheckEligibility();" type="button">Check Eligibility</button>
                     </form>
                   </div>
-                </div>
+                 
+                  </div>
+                   
                 <!-- END PANEL -->
             </div>
+            
             
 </div>
           <!-- END CONTAINER FLUID -->

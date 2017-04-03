@@ -55,59 +55,76 @@
        <div class="content sm-gutter">
           <!-- START CONTAINER FLUID -->
           <div class="container-fluid padding-25 sm-padding-10">
-            
-            <div class="row">
-            <div class="col-md-4">
-            <div class="panel  " style="background-color: beige">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Option one
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <h5>
-                                    Search by blood bank
-                                </h5>
-                    <form role="form" id="perform1" action="searchbloodbank.htm" method="post">
-             
-                      <div class="form-group">
-                        <label>Blood Bank :</label>
-                        <span class="help">e.g. "Care Blood Bank"</span>
-                        <input required type="text" id="bloodbankname" name="bloodbankname" class="form-control">
-                      </div>
-                      
-                      <button class="btn btn-primary btn-cons" name="hospitals" type="submit">Search</button>   
-             </form>       
-                  </div>
-                </div>
-                <!-- END PANEL -->
-            </div>
-            <div class="col-md-4">
-            <div class="panel  " style="background-color: beige">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Option two
-                    </div>
-                  </div>
-                   <div class="panel-body">
-                    <h5>
-                             Search donors 
-                                </h5>
-                    <form role="form" id="perForm" action="searchdonorfromhistory.htm" method="post">
-                      <div class="form-group">
-                        <label>Blood donors :</label>
-                        <span class="help">e.g. "Bill Gates" or blood group e.g "A+"</span>
-                        <input type="text" id="donorName" name="donorName" class="form-control" required>
-                      </div>
-                      <button class="btn btn-primary btn-cons " type="submit">Search</button>
-                         
-                    </form>
-                  </div>
-                </div>
-                <!-- END PANEL -->
-            </div>
-            
+ <div class="panel-display laurier clearfix" id="page-page">
+    <div id="wb-main" role="main">
+    <div id="wb-main-in">
+      <div class="region-laurier-first">
+        <div class="panel-pane pane-block pane-bean-print-page-button">
+<div class="pane-content">
+    <section>
+  <div class="field field--name-field-bean-wetkit-body field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even"><a href="#" onclick="window.print();" title="Print this page" class="cbs-print-page"><span>Print this page</span></a>
+</div></div></div></section>
+  </div>
 </div>
+<div class="panel-pane pane-node-title">
+<div class="pane-content">
+    <h1 class="text-primary">Iron</h1>
+  </div>
+</div>
+<div class="panel-pane pane-node-content">
+ <div class="pane-content">
+    <article id="node-332" role="article" class="node node--blood-page node--promoted node--full node--blood-page--full">
+        <div class="node__content">
+    <div>
+    <h2 class="text-primary">What You Need to Know About Iron</h2>
+
+<p>Iron is an essential mineral that's found in every cell in your body. Considered an 'enabler', iron:</p>
+
+<ul class="cbs-bullets"><li>Helps build red blood cells</li>
+	<li>Supports cell functions</li>
+	<li>Carries oxygen from your lungs to every cell in your body</li>
+</ul><p>When your body has sufficient iron, you tend to feel better and look better, have more energy and find it easier to concentrate. You can also donate blood more regularly.</p>
+
+<h3 class="text-primary">How Much Iron Do I Need?</h3>
+
+<p>The amount of iron you require depends on your age, gender, body type and diet. Women require more iron than men, but tend to consume less in their daily diets. Vegetarians, regardless of gender, often consume less iron. Frequent blood donors have particularly high iron needs.</p>
+
+<h3 class="text-primary">How Is Iron Measured?</h3>
+
+<p>Your body's iron reserves can be estimated by measuring ferritin levels. This is done by a doctor, and is not part of what Canadian Blood Services measures when you donate. Our 'fingerstick test' measures hemoglobin, not iron. These are two different things. For more information on hemoglobin, see <a href="/en/blood/hemoglobin">All About Hemoglobin</a> on this site. Your fingerstick hemoglobin test may be normal even if your iron reserves are low. If you are a frequent blood donor, discuss measuring your iron reserves with your doctor.</p>
+
+<h3 class="text-primary">How Do I Know If I'm Getting Enough Iron?</h3>
+
+<p>Iron comes in two forms:</p>
+
+<ul class="cbs-bullets"><li><em>Heme iron,</em> which is absorbed easily by the body. Foods with heme iron include beef, lamb, pork, liver, veal, chicken, turkey (the dark meat has more iron), fish and seafood.</li>
+	<li><em>Non-heme iron,</em> which is absorbed less easily. Foods with non-heme iron include breakfast cereals (fortified with iron), breads and pasta (whole grain and enriched), lentils, dried peas and beans, tofu, seeds and nuts (pumpkin, sesame or peanut), dried fruit (raisins or apricots), dark green, leafy vegetables, and eggs.</li>
+</ul><p>If you tend to avoid red meat, skip meals, eat less to lose weight, or drink tea or coffee with your meals, you may not be getting enough iron. If you do not eat any meat, fish or poultry, you may not be getting as much and you'll need to consume more iron than people who do.</p>
+
+<p>If you think your iron is low, we recommend you see your doctor. He or she can check if you need any tests done and advise you about iron supplements.</p>
+
+<h3 class="text-primary">Should I Take Iron Supplements?</h3>
+
+<p>It may be helpful to take a vitamin supplement that includes iron to keep your reserves up. If you donate blood frequently (twice a year or more if you're a woman, and three times a year or more if you're a man), the amount of iron in most multivitamins may not meet your needs and iron supplements may be necessary. You don't need a prescription to get iron supplements, however we suggest you discuss taking iron supplements with your pharmacist.</p></div></div></div>  </div>
+        <div class="clear"></div>
+</article>
+  </div>
+
+  
+  </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+    <div class="region-laurier-bottom span-8">
+      <div class="panel-pane pane-block pane-bean-blood-how-else-can-i-help">
+
+  
+  </div>
+  </div>
+  <div class="clear"></div>
+  </div>
+        
           <!-- END CONTAINER FLUID -->
         </div>
         <!-- END PAGE CONTENT -->

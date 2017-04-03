@@ -45,4 +45,34 @@ ModelAndView mv = new ModelAndView("user/eligibilitytest");
 return mv;
 }
 
+
+//user controller starts here
+
+@RequestMapping(value = "/iron.htm", method = RequestMethod.GET)
+public ModelAndView Iron(HttpServletRequest request,
+		HttpServletResponse response) {
+	
+ModelAndView mv = new ModelAndView("user/iron");
+
+return mv;
+}
+
+@RequestMapping(value = "/travel.htm", method = RequestMethod.GET)
+public ModelAndView travel(HttpServletRequest request,
+		HttpServletResponse response) {
+	
+ModelAndView mv = new ModelAndView("user/travel");
+
+return mv;
+}
+
+@RequestMapping(value = "/vaccinations.htm", method = RequestMethod.GET)
+public ModelAndView vaccinations(HttpServletRequest request,
+		HttpServletResponse response) {
+	
+ModelAndView mv = new ModelAndView("user/vaccinations");
+
+return mv;
+}
+
 }
