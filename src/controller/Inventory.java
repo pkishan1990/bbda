@@ -33,4 +33,16 @@ private BloodBankService bloodBankService;
 	return mv;
 }
 
+
+//User Dashboard Code
+
+@RequestMapping(value = "/eligibilitytest.htm", method = RequestMethod.GET)
+public ModelAndView EligibilityTest(HttpServletRequest request,
+		HttpServletResponse response) {
+	
+ModelAndView mv = new ModelAndView("user/eligibilitytest");
+
+return mv;
+}
+
 }

@@ -27,7 +27,8 @@ public class DashboardController {
 	String role =request.getSession().getAttribute("role").toString();
 	Calendar calendar = Calendar.getInstance();
 	//ModelAndView mv = new ModelAndView("bloodbank/Dashboard");
-	ModelAndView mv = new ModelAndView("hospital/Dashboard");
+	//ModelAndView mv = new ModelAndView("hospital/Dashboard");
+	ModelAndView mv = new ModelAndView("user/Dashboard");
 	/*
 	List<Object[]> Studentshavingbirthdays = this.studentMasterService.getUpcomingBirthdays();
 	Map<String,List<String>> upcomingBirthdsys = new HashMap<String, List<String>>();
