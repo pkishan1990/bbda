@@ -57,106 +57,61 @@
           <!-- START CONTAINER FLUID -->
           <div class="container-fluid padding-25 sm-padding-10">
             
-            <div class="row">
-            <div class="col-md-8">
-            <div class="panel b-a b-grey bg-success-light" >
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Manage Inventory
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <h5>
-                                    Inventory status monthly report
-                                </h5>
-                    <form role="form">
-                      
-                      <button class="btn btn-info btn-cons">Generate report</button>
-                         
-                    </form>
+            
+	<div class="row">
+            
+            <div class="panel panel-transparent">
+              <div class="panel-heading">
+                <div class="panel-title">Search Result
+                </div>
+                <div class="pull-right">
+                  <div class="col-xs-12">
+                    <input type="text" id="search-table" class="form-control pull-right" placeholder="Search">
                   </div>
                 </div>
-                <!-- END PANEL -->
-            </div>
-            
-            
-</div>
-
-<div class="row p-t-20">
-            <div class="col-md-8">
-            <div class="panel b-a b-grey bg-complete-light" >
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Manage Inventory
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <h5>
-                                    Month wise Blood issuance report
-                                </h5>
-                    <form role="form">
+                <div class="clearfix"></div>
+              </div>
+              <div class="panel-body">
+                <table class="table table-hover demo-table-search" id="tableWithSearch">
+                  <thead>
+                    <tr>
+                      <th>Product</th>
+                      <th>Current Inv</th>
+                      <th>expire soon</th>
+                      <th>exp date</th>
                       
-                      <button class="btn btn-info btn-cons">Generate report</button>
-                         
-                    </form>
-                  </div>
-                </div>
-                <!-- END PANEL -->
-            </div>
-            
-            
-</div>
-
-
-<div class="row p-t-20">
-            <div class="col-md-8">
-            <div class="panel b-a b-grey bg-primary-light" >
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Manage Inventory
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <h5>
-                                    Month wise Blood requisition report
-                                </h5>
-                    <form role="form">
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                  
+                  <c:forEach var="data" items="${inventory_data}">  
+					<tr>
+                      <td class="v-align-middle semi-bold">
+                        <p>${Inventory.product}</p>
+                      </td>
                       
-                      <button class="btn btn-info btn-cons">Generate report</button>
-                         
-                    </form>
-                  </div>
-                </div>
-                <!-- END PANEL -->
+                      <td class="v-align-middle">
+                        <p>${Inventory.currInv}</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>${Inventory.expireSoon}</td>
+                      <td class="v-align-middle">
+                        <p>${Inventory.expireDate}</p>
+                    
+                    </tr>
+					
+					</c:forEach>
+					
+                            
+             </tbody>
+                </table>
+              </div>
             </div>
-            
-            
-</div>
+                 
+			</div>
+	
 
-<div class="row p-t-20">
-            <div class="col-md-8">
-            <div class="panel b-a b-grey bg-warning-light" >
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      Manage Inventory
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <h5>
-                                    expired and unsuitable blood report
-                                </h5>
-                    <form role="form">
-                      
-                      <button class="btn btn-info btn-cons">Generate report</button>
-                         
-                    </form>
-                  </div>
-                </div>
-                <!-- END PANEL -->
-            </div>
-            
-            
-</div>
 
 
           <!-- END CONTAINER FLUID -->

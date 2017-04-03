@@ -1,5 +1,5 @@
 package entity;
-// Generated 27-Feb-2017 10:30:00 PM by Hibernate Tools 5.2.1.Final
+// Generated 3-Apr-2017 1:25:04 PM by Hibernate Tools 5.2.1.Final
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -25,6 +25,7 @@ public class Donor implements java.io.Serializable {
 	private String city;
 	private String province;
 	private String country;
+	private String bloodgrp;
 
 	public Donor() {
 	}
@@ -34,7 +35,7 @@ public class Donor implements java.io.Serializable {
 	}
 
 	public Donor(long recordid, String firstname, String lastname, String phone1, String phone2, String email,
-			String age, String dob, String weight, String city, String province, String country) {
+			String age, String dob, String weight, String city, String province, String country, String bloodgrp) {
 		this.recordid = recordid;
 		this.firstname = firstname;
 		this.lastname = lastname;
@@ -47,6 +48,7 @@ public class Donor implements java.io.Serializable {
 		this.city = city;
 		this.province = province;
 		this.country = country;
+		this.bloodgrp = bloodgrp;
 	}
 
 	@Id
@@ -157,6 +159,15 @@ public class Donor implements java.io.Serializable {
 
 	public void setCountry(String country) {
 		this.country = country;
+	}
+
+	@Column(name = "bloodgrp", length = 2)
+	public String getBloodgrp() {
+		return this.bloodgrp;
+	}
+
+	public void setBloodgrp(String bloodgrp) {
+		this.bloodgrp = bloodgrp;
 	}
 
 }

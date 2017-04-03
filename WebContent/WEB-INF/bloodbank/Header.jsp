@@ -55,7 +55,7 @@
 <a href="#" class="text-complete pull-left">
 <i class="pg-map fs-16 m-r-10"></i>
 <span class="bold">Dummy Design</span>
-<span class="fs-12 m-l-10">Jaimin Kansara</span>
+<span class="fs-12 m-l-10">Demo Blood Bank</span>
 </a>
 <div class="pull-right">
 <div class="thumbnail-wrapper d16 circular inline m-t-15 m-r-10 toggle-more-details">
@@ -172,7 +172,7 @@ Commented on john Smiths wall.
  
 <div class="visible-lg visible-md m-t-10">
 <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
-<span class="semi-bold">Jaimin </span> <span class="text-master">Kansara</span>
+<span class="semi-bold">Demo Blood Bank </span> <span class="text-master"></span>
 </div>
 <div class="dropdown pull-right">
 <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

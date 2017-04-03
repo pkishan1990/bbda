@@ -64,7 +64,7 @@ private BloodBankService bloodBankService;
 public ModelAndView SearchBloodBank(HttpServletRequest request,
 		HttpServletResponse response) {
 	
-ModelAndView mv = new ModelAndView("hospital/searchBloodBank");
+ModelAndView mv = new ModelAndView("hospital/searchBloodBank"); 
 String searchStr = request.getParameter("bloodbankname");
 Map<String,String[]> list_banks = new HashMap<String, String[]>();
 List<Bloodbankmaster> ls1 = bloodBankService.getListofBloodBanks();
@@ -74,7 +74,7 @@ try {
 	for (Iterator iterator = ls.iterator(); iterator.hasNext();) {
 		Bloodbankmaster bm = (Bloodbankmaster) iterator.next();
 		
-		String str[] = new String[4];
+		String str[] = new String[6];
 		str[0] = bm.getBloodbankname();
 		str[1] = bm.getBankphone1();
 		str[2] = bm.getBankaddress();

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import dao.BloodBankDao;
 import entity.Bloodbankmaster;
 import entity.Donor;
+import entity.Inventory;
 
 @Service
 public class BloodBankServiceImpl implements BloodBankService {
@@ -34,6 +35,16 @@ public List<Donor> searchInDonors(String searchDonor) {
 public List<Bloodbankmaster> searchInBloodBanks(String searchStr) {
 	// TODO Auto-generated method stub
 	return bloodBankDao.searchInBloodBanks(searchStr);
+}
+@Override
+public Bloodbankmaster getBloodBank(String username) {
+	// TODO Auto-generated method stub
+	return bloodBankDao.getBloodBank(username);
+}
+@Override
+public List<Inventory> getInventory(String code) {
+	// TODO Auto-generated method stub
+	return bloodBankDao.getInventory(code);
 }
 	
 	

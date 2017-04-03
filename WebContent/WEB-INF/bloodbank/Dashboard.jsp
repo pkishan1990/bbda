@@ -354,7 +354,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </a>
  
 <div class="view-heading">
-Notications
+Notifications
 </div>
  
 <a href="#" class="inline action p-r-10 pull-right link text-master">
@@ -1419,7 +1419,7 @@ Customize and Preview your dashboard.
 </div>
 </div>
 </div>
- 
+ </div>
 <div class="overlay hide" data-pages="search">
  
 <div class="overlay-content has-results m-t-20">

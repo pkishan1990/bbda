@@ -48,7 +48,7 @@
           <li class="">
             <a href="#" class="detailed">
               <span class="title">Messages</span>
-              <span class="details">234 New messages</span>
+              <span class="details">23 New messages</span>
             </a>
             <span class="icon-thumbnail "><i class="pg-mail"></i></span>
           </li>
@@ -57,7 +57,7 @@
             <span class="icon-thumbnail "><i class="pg-social"></i></span>
           </li>
           <li class="">
-            <a href="Inventory.htm"><span class="title">Inventory</span></a>
+            <a href="BloodBankInventory.htm"><span class="title">Inventory</span></a>
             <span class="icon-thumbnail"><i class="pg-calender"></i></span>
           </li>
           <li class="">

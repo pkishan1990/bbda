@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import entity.Bloodbankmaster;
 import entity.Donor;
+import entity.Inventory;
 import service.BloodBankService;
 
 @Controller
@@ -23,6 +24,35 @@ public class BloodBank {
 
 @Autowired
 private BloodBankService bloodBankService;
+//
+
+
+
+@RequestMapping(value = "/BloodBankInventory.htm", method = RequestMethod.GET)
+public ModelAndView inventory(HttpServletRequest request,
+		HttpServletResponse response) {
+	
+		String role = request.getSession().getAttribute("role").toString();
+		String username = request.getSession().getAttribute("userName").toString();
+		ModelAndView mv = new ModelAndView();
+		if(role.equalsIgnoreCase("bloodbank")){
+			mv = new ModelAndView("bloodbank/Inventory");
+			Bloodbankmaster bank = bloodBankService.getBloodBank(username);
+			List<Inventory> list_inv = bloodBankService.getInventory(bank.getCode());
+			mv.addObject("inventory_data",list_inv);
+			
+			
+		}else if (role.equalsIgnoreCase("hospital")) {
+			mv = new ModelAndView("hospital/Dashboard");
+		}
+
+
+	
+
+//		
+
+		return mv;
+}
 	
 @RequestMapping(value = "/searchdonorfromhistory.htm", method = RequestMethod.POST)
 	public ModelAndView Dashboard(HttpServletRequest request,

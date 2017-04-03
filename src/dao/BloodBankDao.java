@@ -1,10 +1,10 @@
-<<<<<<< HEAD
 package dao;
 
 import java.util.List;
 
 import entity.Bloodbankmaster;
 import entity.Donor;
+import entity.Inventory;
 
 public interface BloodBankDao {
 
@@ -16,24 +16,8 @@ public interface BloodBankDao {
 
 	List<Bloodbankmaster> searchInBloodBanks(String searchStr);
 
-}
-=======
-package dao;
+	Bloodbankmaster getBloodBank(String username);
 
-import java.util.List;
-
-import entity.Bloodbankmaster;
-import entity.Donor;
-
-public interface BloodBankDao {
-
-	List<Bloodbankmaster> getListofBloodBanks();
-
-	List<Donor> getListofDonors();
-
-	List<Donor> searchInDonors(String searchStr);
-
-	List<Bloodbankmaster> searchInBloodBanks(String searchStr);
+	List<Inventory> getInventory(String code);
 
 }
->>>>>>> branch 'master' of https://github.com/pkishan1990/bbda.git
